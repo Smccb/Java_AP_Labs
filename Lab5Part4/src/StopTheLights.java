@@ -1,3 +1,4 @@
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Graphics;
@@ -28,8 +29,8 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 		contentPane.setLayout(new BorderLayout());
 		contentPane.add(buttonHolderPanel, BorderLayout.SOUTH);
 		
-		setVisible(true);
-		setSize(350, 450);
+		setSize(400, 500);
+        setVisible(true);
 		setLocation(100, 50);
 	}
 	
@@ -63,4 +64,11 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 			
 		}
 	}
+
+    @Override
+    public void paint(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.drawOval(150, 150, 100, 100);
+
+    }
 }
