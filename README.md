@@ -1,2 +1,2 @@
 # Java_AP_Labs
-2nd year Advanced Programming Labs 5-8
+2nd year Advanced Programming Module Labs 5-8
