@@ -1,6 +1,6 @@
 
 public class ThreadWithRunnable implements Runnable {
-	static String array[] = {" X ", " Y ", " Z "};
+	static String array[] = {" 1 ", " 2 ", " 3 "};
 	
 	public void run() {
 		for(int i=0; i<=10; i++) {
