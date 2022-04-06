@@ -44,8 +44,7 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 		  int diameter = radius * 2;
 
 		  //shift x and y by the radius of the circle in order to correctly center it
-		  g.fillOval(x - radius, y - radius, diameter, diameter); 
-
+		  g.fillOval(x - radius, y - radius, diameter, diameter);
 		}
 
 	@Override
@@ -56,7 +55,7 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == startButton) {
-			int x=100, y=100, r=100;
+			//int x=100, y=100, r=100;
 			
 			//drawCircle(g, x, y, r);
 		}
@@ -65,10 +64,10 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 		}
 	}
 
-    @Override
-    public void paint(Graphics g) {
-        Graphics2D g2d = (Graphics2D) g;
-        g2d.drawOval(150, 150, 100, 100);
+    //@Override
+    //public void paint(Graphics g) {
+     //   Graphics2D g2d = (Graphics2D) g;
+     //   g2d.drawOval(150, 150, 100, 100);
 
-    }
+   // }
 }
