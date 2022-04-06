@@ -64,10 +64,10 @@ public class StopTheLights extends JFrame implements Runnable, ActionListener{
 		}
 	}
 
-    //@Override
-    //public void paint(Graphics g) {
-     //   Graphics2D g2d = (Graphics2D) g;
-     //   g2d.drawOval(150, 150, 100, 100);
+    @Override
+    public void paint(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.drawOval(150, 150, 100, 100);
 
-   // }
+    }
 }
