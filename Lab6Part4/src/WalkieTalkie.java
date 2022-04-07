@@ -1,4 +1,4 @@
 
-public class WalkieTalkie extends ElectronicDevice {
-	
+public class WalkieTalkie extends HandHeldDevice {
+	double rangeInKm;
 }
