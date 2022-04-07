@@ -1,4 +1,10 @@
 
-public class ElectronicDevice {
-
+abstract class ElectronicDevice {
+	String manufacturer;
+	
+	public ElectronicDevice() {
+		
+	}
+	
+	
 }

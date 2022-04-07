@@ -1,5 +1,5 @@
 /**
- * 
+ * subclass of Computer
  * @author Sarah McCabe
  *
  */
