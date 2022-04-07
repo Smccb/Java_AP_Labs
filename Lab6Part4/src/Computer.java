@@ -4,7 +4,7 @@
  * @author Sarah McCabe
  *
  */
-public class Computer {
+public class Computer extends ElectronicDevice {
 	private double processorSpeed;
 	private int memory;
 	private int screenSize;
