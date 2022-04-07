@@ -1,4 +1,4 @@
-import Lab6Part2.default.Computer;
+import default package.;
 
 public class LaptopComputer extends Computer{
 
