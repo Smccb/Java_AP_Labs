@@ -1,5 +1,12 @@
-
+/**
+ * Testing class for classes ThreadWithExtends and ThreadWithRunnable.
+ * @author Sarah McCabe
+ */
 public class TestThread {
+	
+	/**
+	 * @param args
+	 */
 	public static void main(String [] args) {
 		
 		//initalise objects for extends example

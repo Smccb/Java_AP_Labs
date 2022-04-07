@@ -1,5 +1,14 @@
-
+/**
+ * Testing Computer Abstraction
+ * Main class
+ * @author Sarah McCabe
+ *
+ */
 public class ComputerTest {
+	/**
+	 * main method
+	 * @param args
+	 */
 	public static void main(String [] args) {
 		Computer aC1 = new Computer(3.0, 1000, 27);
 		Computer aC2 = new Computer(3.5, 500, 24);

@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Sarah McCabe
+ *
+ */
 //implements Runnable example
 public class ThreadWithRunnable implements Runnable {
 	static String array[] = {" 1 ", " 2 ", " 3 "};
