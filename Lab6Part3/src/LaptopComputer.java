@@ -26,20 +26,12 @@ public class LaptopComputer extends Computer {
 		this.batteryLife = batteryLife;
 	}
 	
-<<<<<<< Updated upstream
-	public LaptopComputer() {
-		
-=======
 	/**
 	 * uses super string from parent class and creates new string for this class
 	 * @return String
 	 */
 	public String toString() {
 		return super.toString() + ", " + this.batteryLife + "%";
->>>>>>> Stashed changes
 	}
 	
-	public LaptopComputer(int batteryLife) {
-			this.batteryLife = batteryLife;
-		}
 }
