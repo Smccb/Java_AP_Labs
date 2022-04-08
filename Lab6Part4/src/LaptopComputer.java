@@ -22,8 +22,8 @@ public class LaptopComputer extends Computer {
 	 * @param screenSize
 	 * @param batteryLife
 	 */
-	public LaptopComputer(double processorSpeed, int memory, int screenSize, int batteryLife) {
-		super(processorSpeed, memory, screenSize);
+	public LaptopComputer(String manufacturer, double processorSpeed, int memory, int screenSize, int batteryLife) {
+		super(manufacturer, processorSpeed, memory, screenSize);
 		this.batteryLife = batteryLife;
 	}
 	

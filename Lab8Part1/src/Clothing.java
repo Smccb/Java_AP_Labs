@@ -17,6 +17,7 @@ public class Clothing {
 	//constructor passing two attributes
 	public Clothing(String designer, String colour) {
 		this.designer = designer;
+		this.colour = colour;
 	}
 	
 	//constructor passing all attributes
@@ -26,4 +27,7 @@ public class Clothing {
 		this.material = material;
 	}
 	
+	public String toString() {
+		return "designer " + this.designer + ", colour "+ this.colour + ", material " + this.material;
+	}
 }

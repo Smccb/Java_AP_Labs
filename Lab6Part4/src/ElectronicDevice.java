@@ -6,5 +6,7 @@ abstract class ElectronicDevice {
 		
 	}
 	
-	
+	public ElectronicDevice(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
 }

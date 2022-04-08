@@ -22,7 +22,8 @@ public class Computer extends ElectronicDevice {
 	 * @param memory
 	 * @param screenSize
 	 */
-	public Computer(double processorSpeed, int memory, int screenSize){
+	public Computer(String manufacturer, double processorSpeed, int memory, int screenSize){
+		super(manufacturer);
 		this.processorSpeed = processorSpeed;
 		this.memory = memory;
 		this.screenSize = screenSize;

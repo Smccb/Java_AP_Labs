@@ -1,4 +1,9 @@
 
 abstract class HandHeldDevice extends ElectronicDevice {
-	private double weight;
+	protected double weight;
+	
+	public HandHeldDevice(String manufacturer, double weight) {
+		super(manufacturer);
+		this.weight = weight;
+	} 
 }
