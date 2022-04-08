@@ -12,6 +12,10 @@ public class Clothing {
 		this.designer = designer;
 	}
 	
+	public Clothing(String designer, String colour) {
+		this.designer = designer;
+	}
+	
 	public Clothing(String designer, String colour, String material) {
 		this.designer = designer;
 		this.colour = colour;
