@@ -19,7 +19,8 @@ public class ReflectionTest {
 
 			System.out.println("Name of class loaded: " + testClass.getName());
 
-		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
+		} 
+		   catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
 				| NoSuchMethodException | SecurityException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -44,7 +45,6 @@ public class ReflectionTest {
 
 	}
 	
-	}
 
 	// Just some method to use for test purposes
 	public void test1method() {
