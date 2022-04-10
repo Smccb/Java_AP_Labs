@@ -5,16 +5,15 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.*;
-
-class StopTheLightsFrame extends JFrame implements Runnable{
+//stop lights implements runnable
+class StopTheLights extends JFrame implements Runnable{
 	
 	JPanel panel1 = new JPanel();
-    public StopTheLightsFrame(){
+    public StopTheLights(){
         Container contentPane = getContentPane();
         contentPane.add(panel1, "Center");
         JPanel panel = new JPanel();
-        Lights lights = new Lights(panel1);
-
+        Thread t1 = new Thread(new trafficLightsTest(panel1));
         addWindowListener(new WindowAdapter() {  
         	public void windowClosing(WindowEvent e) { 
         		System.exit(0);
@@ -23,19 +22,19 @@ class StopTheLightsFrame extends JFrame implements Runnable{
 
         addButton(panel, "Start", new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                lights.start();
+                t1.start();
             }
         });
 
         addButton(panel, "Stop", new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
-                lights.interrupt();
+                t1.interrupt();
             }
         });
 
         contentPane.add(panel,"South");
-        setLocation(450,200);
+        setLocation(100, 50);
         setResizable(false);
         setSize(300,450);
         setVisible(true);
@@ -47,7 +46,8 @@ class StopTheLightsFrame extends JFrame implements Runnable{
     }
     
     public static void main(String[] args) {
-        StopTheLightsFrame frame = new StopTheLightsFrame();
+        StopTheLights frame = new StopTheLights();
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     
     public void draw(){

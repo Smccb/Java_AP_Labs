@@ -34,6 +34,6 @@ public class Computer extends ElectronicDevice {
 	 * @return String
 	 */
 	public String toString() {
-		return this.processorSpeed + " Gz, " + this.memory + " GB, " + this.screenSize + " inch";
+		return this.manufacturer+ this.processorSpeed + " Gz, " + this.memory + " GB, " + this.screenSize + " inch";
 	}
 }

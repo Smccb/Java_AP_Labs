@@ -6,4 +6,8 @@ public class MobilePhone extends HandHeldDevice {
 		super(manufacturer, weight);
 		this.networkName = networkName;
 	}
+	
+	public String toString() {
+		return "manufacturer " + this.manufacturer + " weight " + this.weight + " network name " + this.networkName;
+	}
 }

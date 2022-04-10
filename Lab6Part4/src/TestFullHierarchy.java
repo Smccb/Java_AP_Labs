@@ -1,18 +1,24 @@
+import java.util.Vector;
 
 public class TestFullHierarchy {
 	public static void main(String [] args) {
-		//Computer c = new Computer(3.0, 1000, 27);
-		//LaptopComputer lc = new LaptopComputer(3.0, 1000, 13, 50);
+		Computer c = new Computer("manufacturer", 3.0, 1000, 13);
+		LaptopComputer lc = new LaptopComputer( "manufacturer", 3.0, 1000, 13, 50);
 		WalkieTalkie w = new WalkieTalkie("Company name", 0.15, 15.0);
-		//MobilePhone mp = new MobilePhone();
-		//HandHeldDevice hhd = new HandHeldDevice();
+		MobilePhone mp = new MobilePhone("manufacturer", 1.5, "vodafone");
 		
-		//private Vector<> objects;
-		
-		//System.out.println(c);
-		//System.out.println(lc);
-		System.out.println(w);
-		//System.out.println(mp);
-		//System.out.println(hhd);
+		//create electronic device object of type vector
+				Vector <ElectronicDevice> ed= new Vector<ElectronicDevice>();
+				
+				//adding items to electronic device vector
+				ed.addElement(c);
+				ed.addElement(lc);
+				ed.addElement(w);
+				ed.addElement(mp);
+				
+				//looping through and printing electronic device vector
+				for(int i=0; i < ed.size(); i++ ){
+					System.out.println(ed.elementAt(i)+"\n");
+				}
 	}
 }
