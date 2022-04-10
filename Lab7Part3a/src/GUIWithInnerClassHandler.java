@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class GUIWithInnerClassHandler extends JFrame {
+public class GUIWithInnerClassHandler extends JFrame implements ActionListener {
 	JButton button = new JButton("Button");
 
 	JLabel label = new JLabel("Label");
@@ -15,14 +15,14 @@ public class GUIWithInnerClassHandler extends JFrame {
 	public GUIWithInnerClassHandler() {
 		Container contentPane = getContentPane();
 		JPanel panel = new JPanel();
-		
-		
+		ButtonHandler bh = new ButtonHandler();
+		button.addActionListener(bh);
 		
 		panel.add(label);
 		panel.add(button);
 		contentPane.add(panel);
 		
-		setSize(200, 200);
+		setSize(500, 300);
         setVisible(true);
 		setLocation(100, 50);
 	}
@@ -32,15 +32,22 @@ public class GUIWithInnerClassHandler extends JFrame {
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
-	public class ButtonHandler implements ActionListener {
+	
 		
-		button.addActionListener(this);
-		
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			set
-		}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
+	//inner class starts
+	   class ButtonHandler implements ActionListener
+	    {
+
+	        @Override
+	        public void actionPerformed(ActionEvent e) {
+
+	            label.setText("Inner class has set the outer label " + ButtonHandler.class.getName());
+	        }
+	    }
+	   //inner class ends
 }

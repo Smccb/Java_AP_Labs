@@ -6,14 +6,13 @@ public class Desktop extends Computer{
 	private String CustomOrPreBuilt;
 	private boolean rgb;
 	
-	public Desktop(double screenSize, int amountOfRam, String gpu, String cpu) {
-		
+	public Desktop(double screenSize, int amountOfRam, String gpu, String cpu, int numOfMonitors, String keyboardType, int numGlassPanels, String customOrPreBuilt, boolean rgb) {
 		super(screenSize, amountOfRam, gpu, cpu);
-		
 		this.numOfMonitors = numOfMonitors;
-		this.KeyboardType = KeyboardType;
+		this.KeyboardType = keyboardType;
 		this.numGlassPanels = numGlassPanels;
-		this.CustomOrPreBuilt = CustomOrPreBuilt;
+		this.CustomOrPreBuilt = customOrPreBuilt;
 		this.rgb = rgb;
 	}
+	
 }
