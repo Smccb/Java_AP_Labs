@@ -6,7 +6,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.*;
 //stop lights implements runnable
-class StopTheLights extends JFrame implements Runnable{
+class StopTheLights extends JFrame{
 	
 	JPanel panel1 = new JPanel();
     public StopTheLights(){
@@ -32,7 +32,7 @@ class StopTheLights extends JFrame implements Runnable{
                 t1.interrupt();
             }
         });
-
+        
         contentPane.add(panel,"South");
         setLocation(100, 50);
         setResizable(false);
@@ -49,38 +49,4 @@ class StopTheLights extends JFrame implements Runnable{
         StopTheLights frame = new StopTheLights();
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-    
-    public void draw(){
-        Graphics g = panel1.getGraphics();
-        g.setColor(Color.BLACK);
-        g.fillOval(100,20,100,100);
-        g.fillOval(100,125,100,100);
-        g.fillOval(100,230,100,100);
-
-    }
-    
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-		try {
-            draw();
-            while (true){
-                Graphics g = panel1.getGraphics();
-                g.setColor(Color.RED);
-                g.fillOval(110, 30, 80, 80);
-                Thread.sleep(500);
-                draw();
-                g.setColor(Color.YELLOW);
-                g.fillOval(110,135,80,80);
-                Thread.sleep(500);
-                draw();
-                g.setColor(Color.green);
-                g.fillOval(110,240,80,80);
-                Thread.sleep(500);
-                draw();
-            }
-        }
-        catch (InterruptedException e){}
-		
-	}
 }

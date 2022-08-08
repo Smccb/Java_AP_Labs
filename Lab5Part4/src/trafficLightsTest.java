@@ -28,7 +28,7 @@ public class trafficLightsTest implements Runnable {
 		try {
 			//calls draw method
             draw();
-           //loops through drawing colours in traffic lights indefinitely
+           //loops through drawing colours in traffic lights
             while (true){
                 Graphics g = panel.getGraphics();
                 g.setColor(Color.RED);

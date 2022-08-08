@@ -10,7 +10,7 @@ public class testComputer {
 		
 		//looping through and printing car vector
 		for(int i=0; i < computerGeneric.size(); i++ ){
-			System.out.println(computerGeneric.elementAt(i).computerInfo()+"\n");
+			System.out.println(computerGeneric.elementAt(i).Computer()+"\n");
 		}
 	}
 }
